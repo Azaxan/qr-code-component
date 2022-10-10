@@ -50,7 +50,7 @@ body {
 }
 
 .component-elements span {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   text-align: center;
 }
@@ -59,4 +59,23 @@ body {
   color: var(--color-grayish-blue);
   font-weight: 400;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .component-container {
+    width: 85%;
+    padding: 20px 20px;
+  }
+  
+  .component-elements {
+    gap: 15px;
+  }
+
+  .component-elements span {
+    font-size: 1.5rem;
+  }
+
+  .component-elements p {
+    font-size: 16px;
+  }
 }
